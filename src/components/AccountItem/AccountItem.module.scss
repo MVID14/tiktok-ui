@@ -1,0 +1,41 @@
+.Wrapper {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+        cursor: pointer;
+    }
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 12px;
+}
+
+.info {
+    padding: 9 16px;
+    flex: 1;
+    margin-left: 12px;
+    font-size: 1.6rem;
+}
+
+.name {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 22px;
+}
+.check {
+    color: rgb(32, 213, 236);
+    font-size: 14px;
+    margin-left: 7px;
+}
+.username {
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(22, 24, 35, 0.5);
+}
