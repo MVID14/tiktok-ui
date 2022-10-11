@@ -26,6 +26,7 @@
 .search,
 .search-result {
     width: 361px;
+    display: none;
 }
 .search-tittle {
     height: 30px;
@@ -96,4 +97,9 @@
         background-color: rgba(22, 24, 35, 0.03);
         cursor: pointer;
     }
+}
+
+.iconPlus {
+    padding: 0 2px;
+    margin-left: -7px;
 }

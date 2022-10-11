@@ -1,10 +1,9 @@
 .Wrapper {
+    --search-boder-radius: 92px;
+
     border-radius: 4px;
     border: none;
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(254, 44, 85, 1);
-    min-height: 36px;
-    display: flex;
     position: relative;
     justify-content: center;
     padding: 6px 8px;
@@ -13,6 +12,91 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
-    margin-left: 16px;
     min-width: 100px;
+
+    &.Wrapper {
+        margin-left: 16px;
+    }
+
+    &.disable {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+// button type
+
+.rounded {
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+    border-radius: 50px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    // min-width: 84px;
+    // height: 30px;
+    // padding: 0 8px;
+    background: none;
+    color: rgba(22, 24, 35, 0.75);
+    // text-align: center;
+    // align-items: center;
+    // font-size: 14px;
+    &:hover {
+        border-color: rgba(22, 24, 35, 0.2);
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+.primary {
+    color: var(--white);
+    background-color: var(--primary);
+    border-color: var(--primary);
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
+        border-color: var(--primary);
+    }
+}
+
+.small {
+    min-width: 88px;
+    padding: 0 10px;
+    height: 28px;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    background-color: var(--white);
+}
+
+.outline {
+    min-width: 110px;
+    // padding: 0 16px;
+    // height: 36px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    background: rgba(255, 255, 255, 1);
+    color: rgba(22, 24, 35, 0.8);
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.large {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    color: rgb(254, 44, 85);
+    border-color: rgb(254, 44, 85);
+    background-color: rgb(255, 255, 255);
+    min-width: 168px;
+    min-height: 48px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 600;
+    user-select: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 6px 118px;
+    align-items: center;
 }
