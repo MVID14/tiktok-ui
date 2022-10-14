@@ -1,0 +1,21 @@
+.menu-list {
+    width: 224px;
+    padding: 4px 0;
+
+    .menu-item {
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        color: black;
+        background: transparent;
+        padding: 10px 15px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        &:hover {
+            background: rgba(22, 24, 35, 0.03);
+        }
+    }
+}
+
+//@at-root

@@ -14,6 +14,7 @@
 
 .inner {
     height: var(--default-layout-header-height, 60px);
+    padding: 0 var(--default-layout-width-space);
     width: 1150px;
     display: flex;
     align-items: center;
@@ -26,7 +27,6 @@
 .search,
 .search-result {
     width: 361px;
-    display: none;
 }
 .search-tittle {
     height: 30px;
@@ -99,7 +99,12 @@
     }
 }
 
-.iconPlus {
-    padding: 0 2px;
-    margin-left: -7px;
+//Menu
+
+.more-btn {
+    font-size: 2rem;
+    margin-left: 28px;
+    background: transparent;
+    padding: 4px 10px;
+    cursor: pointer;
 }

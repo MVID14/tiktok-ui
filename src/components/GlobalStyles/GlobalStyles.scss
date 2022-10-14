@@ -8,6 +8,7 @@
     //layout
     --default-layout-header-height: 60px;
     --default-layout-width: 1150px;
+    --default-layout-width-space: 24px;
 }
 * {
     box-sizing: border-box;
@@ -25,8 +26,10 @@ body {
     color: rgba(22, 24, 35, 1);
 
     input,
-    button {
+    button,
+    a {
         border: none;
         outline: none;
+        text-decoration: none;
     }
 }
